@@ -4,6 +4,8 @@ import Layout from "./pages/layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
