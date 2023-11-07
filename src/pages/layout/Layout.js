@@ -1,15 +1,17 @@
-
 import { Outlet, Link } from "react-router-dom";
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import React from "react";
+
 const Layout = () => {
   return (
     <>
-        <style>
+      <style>
         {`
-          .navbar-brand {
+          .navbar-brand, nav.Link {
             padding: 0.5rem 1rem;
             transition: background-color 0.3s ease-in-out;
             box-sizing: border-box;
+            font-size: 1.5rem;
           }
 
           .navbar-brand:hover, .navbar-brand:focus {
@@ -17,33 +19,39 @@ const Layout = () => {
             color: #fff;
             border-radius: 0.25rem;
           }
+
+          .contact { 
+            float: right;
+            background-color: #0056b3;
+          }
         `}
       </style>
-      {/* Add 'fixed-top' class to the nav element */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <Link className="navbar-brand" to="/">Home</Link>
-        <Link className="navbar-brand" to="/about">About us</Link>
-        <Link className="navbar-brand" to="/contact">Contact</Link>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">About us</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
+      {/* Using react-bootstrap Navbar */}
+      <Navbar bg="primary" variant="dark" expand="lg" fixed="top">
+        <Container>
+          <Navbar.Brand as={Link} to="/">
+            <img
+              src="https://png.pngtree.com/png-vector/20220903/ourmid/pngtree-delivery-truck-logo-png-image_6136930.png"
+              alt="logo"
+              width="70"
+              height="70"
+            />
+            
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Navbar.Brand as={Link} to="/" eventKey="1">Home</Navbar.Brand>
+              <Navbar.Brand as={Link} to="/about" eventKey="2">About us</Navbar.Brand>
+              <Navbar.Brand as={Link} to="/contact" eventKey="3">Contact</Navbar.Brand>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
       <div style={{ paddingTop: '56px' }}>
-      <Outlet />
+        <Outlet />
       </div>
 
     </>

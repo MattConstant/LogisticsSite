@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const cardStyle = {
   width: '18rem',
   marginLeft: 'auto', // these two lines center the card horizontally
-  marginRight: 'auto'
+  marginRight: 'auto',
+  boxShadow: '0 16px 18px 0 rgba(0,0,0,0.2)',
 };
 
 const Card = ({ title, text, imageUrl }) => {

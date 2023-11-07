@@ -4,12 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CarouselComponent = () => {
   return (
-    <div style={{ maxWidth: '40%', margin: '0 auto', borderRadius: '20rem' }}>
+    <div style={{ maxWidth: '100%', margin: '0 auto', borderRadius: '20rem' }}>
       <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Peterbilt_359_Classic_%281977%29_pic2.JPG/1200px-Peterbilt_359_Classic_%281977%29_pic2.JPG"
+            src="https://www.aaslatransport.ca/images/within-canada-banner.jpg"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -20,7 +20,7 @@ const CarouselComponent = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://fleetnetamerica.com/wp-content/uploads/sites/2/2017/07/Semi-Truck-Fact-scaled.jpg"
+            src="https://www.ibi.com/sites/ibi/files/styles/banner_large/public/customer-sunset-transportation.jpg?itok=ik9WgTql"
             alt="Second slide"
           />
 
@@ -32,7 +32,7 @@ const CarouselComponent = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://images.contentstack.io/v3/assets/blte891c850d5781579/bltcbbec39910c9477f/How-long-is-a-semi-truck.jpg"
+            src="https://www.logicalposition.com/img/case-studies/big-machine-parts_Banner.jpg"
             alt="Third slide"
           />
 
