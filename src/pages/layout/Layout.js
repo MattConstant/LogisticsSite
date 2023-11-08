@@ -76,7 +76,7 @@ const Layout = () => {
         </Container>
       </Navbar>
 
-      <div style={{ paddingTop: '70px' }}>
+      <div style={{ paddingTop: '75px' }}>
         <Outlet />
       </div>
 
