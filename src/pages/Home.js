@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../components/CardComponent.tsx";
 import CarouselComponent from "../components/CarousselComponent.tsx";
 import BannerComponent from "../components/BannerComponent.tsx";
+import { FooterComponent } from "../components/FooterComponent.tsx";
 
 const Home = () => {
   return (
@@ -41,6 +42,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <FooterComponent/>
     </>
   );
 };
