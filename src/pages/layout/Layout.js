@@ -6,12 +6,18 @@ const Layout = () => {
   return (
     <>
       <style>
-        {`
+        {`  
+
+          .navbar {
+            box-shadow: 2px 2px 5px;
+          }
           .navbar-brand, nav.Link {
-            padding: 0.5rem 1rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
             transition: background-color 0.3s ease-in-out;
             box-sizing: border-box;
             font-size: 1.5rem;
+            margin-left: 0;
           }
 
           .navbar-brand:hover, .navbar-brand:focus {
@@ -20,31 +26,51 @@ const Layout = () => {
             border-radius: 0.25rem;
           }
 
-          .contact { 
+          .new-link {
             float: right;
-            background-color: #0056b3;
+            margin-left: 10px;
           }
+
+          .navbar-text {
+            position: relative;
+            text-align: left;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-top: 1rem;
+          }
+
+          @media (max-width: 767px) {
+            .navbar-text {
+              position: static;
+              text-align: center;
+            }
+          }
+
         `}
       </style>
 
-      {/* Using react-bootstrap Navbar */}
       <Navbar bg="primary" variant="dark" expand="lg" fixed="top">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img
               src="https://png.pngtree.com/png-vector/20220903/ourmid/pngtree-delivery-truck-logo-png-image_6136930.png"
               alt="logo"
-              width="70"
-              height="70"
+              width="60"
+              height="60"
             />
-            
+                 <Navbar.Text className="navbar-text">
+            Title
+          </Navbar.Text>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Navbar.Brand as={Link} to="/" eventKey="1">Home</Navbar.Brand>
               <Navbar.Brand as={Link} to="/about" eventKey="2">About us</Navbar.Brand>
-              <Navbar.Brand as={Link} to="/contact" eventKey="3">Contact</Navbar.Brand>
+            </Nav>
+            <Nav>
+              <Navbar.Brand className="new-link" as={Link} to="/contact" eventKey="3">Contact</Navbar.Brand>
             </Nav>
           </Navbar.Collapse>
         </Container>
