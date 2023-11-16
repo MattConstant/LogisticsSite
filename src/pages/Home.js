@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../components/CardComponent.tsx";
 import CarouselComponent from "../components/CarousselComponent.tsx";
-import BannerComponent from "../components/BannerComponent.tsx";
 import { FooterComponent } from "../components/FooterComponent.tsx";
 
 const Home = () => {
@@ -10,6 +9,7 @@ const Home = () => {
     <style> 
     {`
     h1 { padding-top: 2%; text-align: center; }
+
     `}
     </style>
     <div>
@@ -41,7 +41,7 @@ const Home = () => {
         </div>
         </div>
       </div>
-    </div>
+    </div>    
     <FooterComponent/>
     </>
   );
