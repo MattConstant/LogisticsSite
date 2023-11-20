@@ -51,12 +51,12 @@ export function FooterComponent() {
       <Footer className='Footer'>
         <div>
           <h2>Contact</h2>
-          <p>Phone: 123-456-7890</p>
-          <p>Email: info@example.com</p>
+          <p>Phone: (613) 804-6000</p>
+          <p>Email: marquismainville@gmail.com</p>
         </div>
         <div>
           <h2>About Us</h2>
-          <div className='p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          <div className='p'>At Focus Logistics, we're committed to unlocking the potential of your supply chain.our mission is to provide tailored logistics services that ensure your products are delivered reliably</div>
         </div>
       </Footer>
     </div>

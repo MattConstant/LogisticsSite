@@ -10,9 +10,9 @@ const Contact = () => {
       <Row className="my-5 justify-content-center">
         <Col lg={8} className="text-center">
           <h1>Contact Me</h1>
-          <p>I'm available for freelance work and interesting projects. Feel free to reach out to me:</p>
-          <a href="mailto:example@example.com">example@example.com</a>
-          <p>Or give me a call: <a href="tel:+123456789">+123456789</a></p>
+          <p>Please reach out to us with any questions or concerns you may have</p>
+          <a href="mailto:marquismainville@gmail.com">marquismainville@gmail.com</a>
+          <p>Or give me a call: <a href="tel:+6138046000">(613) 804-6000</a></p>
         </Col>
       </Row>
 

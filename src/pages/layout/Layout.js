@@ -60,7 +60,7 @@ const Layout = () => {
               height="60"
             />
                  <Navbar.Text className="navbar-text">
-            Title
+            Focus Logistics
           </Navbar.Text>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
