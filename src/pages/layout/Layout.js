@@ -47,10 +47,14 @@ const Layout = () => {
             }
           }
 
+          .navbar {
+            background-color: #00468b;
+          }
+
         `}
       </style>
 
-      <Navbar bg="primary" variant="dark" expand="lg" fixed="top">
+      <Navbar variant="dark" expand="lg" fixed="top">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img

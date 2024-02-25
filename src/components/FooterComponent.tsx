@@ -56,7 +56,7 @@ export function FooterComponent() {
         </div>
         <div>
           <h2>About Us</h2>
-          <div className='p'>At Focus Logistics, we're committed to unlocking the potential of your supply chain.our mission is to provide tailored logistics services that ensure your products are delivered reliably</div>
+          <div className='p'>At Focus Logistics, we're committed to unlocking the potential of your supply chain.</div>
         </div>
       </Footer>
     </div>
