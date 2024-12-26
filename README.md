@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+Access this site through https://logistics-site-henna.vercel.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
