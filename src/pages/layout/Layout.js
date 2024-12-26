@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import React from "react";
-
+import logo from '../../images/truck.png';
 const Layout = () => {
   return (
     <>
@@ -48,9 +48,13 @@ const Layout = () => {
           }
 
           .navbar {
-            background-color: #00468b;
+            background-color: #0056b3;
           }
 
+          .logo {
+            min-width: 130px;
+            padding-right: 20px;
+          }
         `}
       </style>
 
@@ -58,7 +62,8 @@ const Layout = () => {
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img
-              src="https://png.pngtree.com/png-vector/20220903/ourmid/pngtree-delivery-truck-logo-png-image_6136930.png"
+              className="logo"
+              src={logo}
               alt="logo"
               width="60"
               height="60"
